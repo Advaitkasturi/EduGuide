@@ -1,0 +1,305 @@
+  /* =========================
+    GLOBAL RESET
+    ========================= */
+  * {
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background: #0b0720;
+    color: #ffffff;
+  }
+
+  /* =========================
+    PAGE (NAVBAR SAFE)
+    ========================= */
+  .page {
+    min-height: 100vh;
+    padding: 150px 60px 50px;
+    background: radial-gradient(circle at top, #2b1f55 0%, #0b0720 60%);
+  }
+
+  /* =========================
+    TOP BAR
+    ========================= */
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    padding: 30px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(15, 10, 40, 0.85);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .topbar h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .topbar h1 span {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .topbar nav {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  .topbar nav a {
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .topbar nav a:hover {
+    opacity: 1;
+  }
+
+  .menu {
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* =========================
+    DASHBOARD GRID
+    ========================= */
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 36px;
+  }
+
+  /* =========================
+    GLASS CARDS
+    ========================= */
+  .card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    padding: 28px;
+
+    box-shadow:
+      0 25px 55px rgba(0, 0, 0, 0.45),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  }
+
+  /* =========================
+    INPUT CARD
+    ========================= */
+  .input-card h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .input-card label {
+    display: block;
+    margin-top: 18px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: #e5e7eb;
+  }
+
+  /* SELECT */
+  .input-card select {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+
+    background: rgba(0, 0, 0, 0.35);
+    color: #ffffff;
+  }
+
+  .input-card select option {
+    color: #111827;
+  }
+
+  /* RANGE */
+  .range-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 8px;
+  }
+
+  .range-row input {
+    flex: 1;
+    accent-color: #fbbf24;
+  }
+
+  .range-row span {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  /* BUTTON */
+  .predict-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #111827;
+
+    background: linear-gradient(90deg, #fbbf24, #f97316);
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .predict-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 40px rgba(249, 115, 22, 0.6);
+  }
+
+  /* =========================
+    RIGHT PANEL
+    ========================= */
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* SCORE CARD */
+  .score-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .score-card p {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .score-card h3 {
+    margin-top: 6px;
+    font-size: 20px;
+  }
+
+  .score-card h3 span {
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+
+  .check {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(34, 197, 94, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    color: #22c55e;
+  }
+
+  /* =========================
+    WEAK AREAS
+    ========================= */
+  .card ul {
+    margin-top: 14px;
+    padding-left: 18px;
+  }
+
+  .card ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  /* =========================
+    PLAN SECTION
+    ========================= */
+  .plan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .plan-card {
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.25),
+      0 12px 35px rgba(0, 0, 0, 0.35);
+  }
+
+  .plan-card h4 {
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .plan-card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* COLORS */
+  .yellow {
+    background: linear-gradient(135deg, #fde68a, #f59e0b);
+    color: #111827;
+  }
+
+  .blue {
+    background: linear-gradient(135deg, #bfdbfe, #6366f1);
+    color: #ffffff;
+  }
+
+  .pink {
+    background: linear-gradient(135deg, #fbcfe8, #d946ef);
+    color: #ffffff;
+  }
+
+  /* =========================
+    FOOTER
+    ========================= */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+    color: #c7c7c7;
+  }
+
+  /* =========================
+    RESPONSIVE
+    ========================= */
+  @media (max-width: 1024px) {
+    .dashboard {
+      grid-template-columns: 1fr;
+    }
+
+    .plan {
+      grid-template-columns: 1fr;
+    }
+
+    .topbar {
+      padding: 24px 30px;
+    }
+
+    .page {
+      padding: 140px 30px 40px;
+    }
+  }
