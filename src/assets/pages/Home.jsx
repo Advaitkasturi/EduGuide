@@ -61,7 +61,7 @@ export default function Home() {
             value={internalScore}
             onChange={(e) => setInternalScore(Number(e.target.value))}
           >
-            {[50, 60, 70, 80, 90].map((s) => (
+            {[10, 20, 30, 40, 50].map((s) => (
               <option key={s} value={s}>
                 {s}
               </option>
@@ -73,7 +73,7 @@ export default function Home() {
             value={assignmentScore}
             onChange={(e) => setAssignmentScore(Number(e.target.value))}
           >
-            {[50, 60, 70, 80, 90].map((s) => (
+            {[10, 20, 30, 40, 50].map((s) => (
               <option key={s} value={s}>
                 {s}
               </option>
